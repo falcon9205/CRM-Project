@@ -3,8 +3,6 @@ import mongoose from 'mongoose';
 const videoEditingSchema = new mongoose.Schema({
     id: {
         type: mongoose.Schema.ObjectId,
-        ref: 'Employee',
-        required: true,
     },
     department_id: {
         type: mongoose.Schema.ObjectId,

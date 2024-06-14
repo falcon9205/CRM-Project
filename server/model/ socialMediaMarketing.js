@@ -2,9 +2,7 @@ import mongoose from 'mongoose';
 
 const socialMediaMarketingSchema = new mongoose.Schema({
     id: {
-        type: mongoose.Schema.ObjectId,
-        ref: 'Employee',
-        required: true,
+        type: mongoose.Schema.ObjectId
     },
     department_id: {
         type: mongoose.Schema.ObjectId,

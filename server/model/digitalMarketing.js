@@ -4,7 +4,6 @@ const digitalMarketingSchema = new mongoose.Schema({
     id: {
         type: mongoose.Schema.ObjectId,
         ref: 'Employee',
-        required: true,
     },
     department_id: {
         type: mongoose.Schema.ObjectId,
