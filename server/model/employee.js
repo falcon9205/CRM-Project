@@ -6,7 +6,9 @@ const employeeSchema = new mongoose.Schema({
   post: { type: String, required: true },
   departments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'department' }],
   password: { type: String, required: true },
-  isAdmin:{type:Boolean,default:'false'}
+  isAdmin:{type:Boolean,default:'false'},
+  createdAt: { type: Date, default: Date.now }, 
+  updatedAt: { type: Date, default: Date.now },
 });
 
 const employee = mongoose.model('employee', employeeSchema);

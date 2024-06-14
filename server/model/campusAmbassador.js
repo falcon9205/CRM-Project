@@ -24,6 +24,8 @@ const campusAmbassadorSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    createdAt: { type: Date, default: Date.now }, 
+    updatedAt: { type: Date, default: Date.now },
 });
 
 const CampusAmbassador = mongoose.model('CampusAmbassador', campusAmbassadorSchema);
